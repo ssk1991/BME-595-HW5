@@ -13,3 +13,5 @@
 
 
 ## Possibly using the ELU activation function might be benficial as well.
+
+# The LeNet5 trained on CIFAR100, is able to accept and classify colour input images of size [32x32]. However, I could not execute the program on images captured using the webcam through OpenCV. This is because I was using a Linux server to execute the program, and could not figure how to link the webcam to the server.
