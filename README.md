@@ -14,4 +14,11 @@
 
 ## Possibly using the ELU activation function might be benficial as well.
 
-## The LeNet5 trained on CIFAR100, is able to accept and classify colour input images of size [32x32]. However, I could not execute the program on images captured using the webcam through OpenCV. This is because I was using a Linux server to execute the program, and could not figure how to link the webcam to the server.
+# Classify Webcam Images
+## The LeNet5 trained on CIFAR100 was done on a GPU with CUDA. For the webcam capture I used my laptop, without CUDA, and hence did not train the network beyond 10% accuracy. As a result, the predictions may not be accurate. But Conceptually, the idea is the same
+
+![alt text](https://github.com/ssk1991/BME-595-HW5/blob/master/Images/Frame%20Classify.png)
+
+## As you can see it gave my face the label of 70. The image is distorted because the LeNet works with 32x32 images. Hence, the webcam feed had to be downsized and then upscaled again. I could have overlaid the label onto the default camera feed, rather than on the downsampled webcam feed, but I wanted to show the "actual" image that was being fed into the network.
+
+
